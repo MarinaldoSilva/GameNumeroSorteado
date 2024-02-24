@@ -6,7 +6,13 @@ let tentativas = 1;
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
+    //responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
+    //é possível narrar partes do jogo com esses parâmetros 
+    /**
+     * incorporar juntamente no html esse cód p/ funcionar
+     * <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+     */
+      responsiveVoice.speak(texto, 'Brazilian Portuguese Male', {rate:2.0});
 }
 
 function exibirMensagemInicial() {
@@ -41,12 +47,20 @@ function gerarNumeroAleatorio() {
     let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
 
     if (quantidadeDeElementosNaLista == numeroLimite) {
+        //verifica se a quantidade de elementos sorteados já atingiu o limite
+        //se tiver o array vai ser limpo.
         listaDeNumerosSorteados = [];
     }
+
     if (listaDeNumerosSorteados.includes(numeroEscolhido)) {
+        //includes verifica se determinado elemento está na lista.
         return gerarNumeroAleatorio();
     } else {
         listaDeNumerosSorteados.push(numeroEscolhido);
+        //push() adiciona um elemento ao final da lista
+        /*IMPORTANTE 
+        P/ remover um elemento do array -> array.pop();
+        */
         console.log(listaDeNumerosSorteados)
         return numeroEscolhido;
     }
@@ -64,7 +78,6 @@ function reiniciarJogo() {
     exibirMensagemInicial();
     document.getElementById('reiniciar').setAttribute('disabled', true)
 }
-
 
 
 
