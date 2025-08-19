@@ -1,11 +1,12 @@
 ## Jogo do Número Secreto - Adivinhe e Ganhe Dicas! 🔢
-Este projeto foi desenvolvido como parte do curso Oracle ONE (6ª turma) e leva o clássico "Jogo do Número Secreto" a um novo nível. O objetivo é adivinhar um número aleatório, mas com uma ajuda extra para você não se perder no caminho!
+Este projeto foi desenvolvido como parte do curso Oracle ONE (6ª turma) e leva o clássico "Jogo do Número Secreto" a um novo nível. O objetivo é adivinhar um número aleatório.
 
 Funcionalidades:
 
-Adivinhe o Número: O jogo sorteia um número e o seu objetivo é adivinhar qual é ele.
+Adivinhe o Número: O jogo sorteia um número e o seu objetivo é adivinhar qual, tem um contador que conta as tentativas errados até acertar.
+O jogo também mostra se o número que foi chutado é maior ou menor que o número escolhido de forma aleatória do sistema.
 
-Dicas Inteligentes: Não se preocupe em chutar no escuro! A cada tentativa, o jogo te dá uma dica, dizendo se o número secreto é maior ou menor do que o seu palpite.
+O jogo também conta com o um narrador (verifique o seu browser para saber se tm suporte) dos conteúdos da tela, nesse momento está em versão de testes.
 
 ### 🤖Tecnologias Utilizadas:
 
